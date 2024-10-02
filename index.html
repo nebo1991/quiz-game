@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+  </head>
+  <body>
+    <div class="container">
+      <header>
+      </header>
+
+
+      <div id="quizView" class="view">
+        <div id="progress">
+          <div id="progressBar">
+            <i class="fas fa-rocket" id="rocketIcon"></i>
+          </div>
+        </div>
+        <div id="questionCount"></div>
+
+        <div class="content">
+          <div id="question"></div>
+          <ul id="choices"></ul>
+        </div>
+        <button id="nextButton" class="button-primary">Answer</button>
+      </div>
+
+      <div id="endView" class="view" style="display: none">
+        <div id="result-progress">
+          <div id="resultProgressBar"></div>
+        </div>
+
+        <p class="emphasis">Results</p>
+        <div class="content">
+          <div id="result"></div>
+        </div>
+        <button id="restartButton" class="button-secondary">
+          Restart Quiz
+        </button>
+      </div>
+
+  
+      <div id="toast" class="toast"></div>
+        <span id="toast-message"></span>
+        <span id="close-toast">x</span>
+      </div>
+    </div>
+
+    <script src="src/question.js"></script>
+    <script src="src/quiz.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
