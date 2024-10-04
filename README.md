@@ -23,3 +23,25 @@ Your game must meet the following technical requirements:
 - You must deploy your game online using GitHub Pages so anyone can play it.
 - Your code should follow the principles of KISS (Keep It Simple Stupid) and DRY (Don’t Repeat Yourself).
 
+## Getting started
+
+1. Clone the repository to your local machine.
+2. Ensure that Visual Studio Code (VS Code) is installed, then open the project in VS Code.
+3. Install the "Live Server" extension by Ritwick Dey.
+4. After installing the extension, either click the "Go Live" button in the footer of VS Code or right-click on the ```index.html``` file and select the "Open with Live Server" option.
+
+
+## Project structure:
+The project follows a simple structure to organize the quiz-related logic. 
+
+Below is an overview of the main files within the ``src`` folder:
+
+```Quiz.js```
+This file contains the Quiz class which handles the core functionality of the quiz. It includes methods for getting the Question, moving to next Question, checking if answer is correct and similar.
+
+```questions.js```
+This file defines the Questions class, which manages questions shuffling.
+
+```index.js```
+This is the main entry point of the application. It orchestrates the interactions between Quiz and Questions classes.
+
