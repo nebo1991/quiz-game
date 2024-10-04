@@ -154,23 +154,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function showToast(message) {
-  const toastMessage = document.body.querySelector("#toast-message");
+// function showToast(message) {
+//   const toastMessage = document.body.querySelector("#toast-message");
 
-  console.log("showToast called!");
+//   console.log("showToast called!");
 
-  toastMessage.innerHTML = message;
+//   toastMessage.innerHTML = message;
 
-  const toastBlock = document.body.querySelector("#toast");
-  toastBlock.classList.add("show");
+//   const toastBlock = document.body.querySelector("#toast");
+//   toastBlock.classList.add("show");
 
-  setTimeout(() => {
-    toastBlock.classList.remove("show");
-  }, 3000);
+//   setTimeout(() => {
+//     toastBlock.classList.remove("show");
+//   }, 3000);
 
-  const closeToastButton = document.body.querySelector("#close-toast");
+//   const closeToastButton = document.body.querySelector("#close-toast");
 
-  closeToastButton.addEventListener("click", () => {
-    toastBlock.classList.remove("show");
-  });
-}
+//   closeToastButton.addEventListener("click", () => {
+//     toastBlock.classList.remove("show");
+//   });
+// }
