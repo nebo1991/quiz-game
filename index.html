@@ -2,17 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>JavaScript Quiz</title>
+    <title>Game-Quiz</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <header>
-      </header>
-
+      <header></header>
 
       <div id="quizView" class="view">
         <div id="progress">
@@ -23,7 +22,9 @@
         <div id="questionCount"></div>
 
         <div class="content">
-          <div id="question"></div>
+          <div id="question-container">
+            <p id="question"></p>
+          </div>
           <ul id="choices"></ul>
         </div>
         <button id="nextButton" class="button-primary">Answer</button>
@@ -41,12 +42,6 @@
         <button id="restartButton" class="button-secondary">
           Restart Quiz
         </button>
-      </div>
-
-  
-      <div id="toast" class="toast"></div>
-        <span id="toast-message"></span>
-        <span id="close-toast">x</span>
       </div>
     </div>
 

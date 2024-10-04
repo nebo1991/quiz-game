@@ -6,28 +6,20 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9); */
-    /* background-image: url("https://i.pinimg.com/originals/db/34/d4/db34d40b271fb59477621550bf73ea0b.jpg"); */
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #333;
+    background-image: url("https://img.freepik.com/premium-photo/dark-brick-wall-with-neon-question-marks-symbolizes-evening-games-reflection_1062399-14888.jpg?w=740");
+    background-size: stretch;
     line-height: 1.6;
-    padding: 40px;
+    padding-top: 90px;
 }
 
-/* header {
-    padding: 0 20px;
-} */
 
 .container {
     height: 600px;
     max-width: 650px;
     margin: auto;
     padding: 20px;
-    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #1d2b64, #fca1bc);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
@@ -49,21 +41,23 @@ body {
 button {
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    width: 160px;
-    transition: background-color 0.3s ease;
+    width: 180px;
+    height: 60px;
+    transition: background-color 0.1s ease;
 }
 
 .button-primary {
-    background-color: #4caf50;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+
 }
 
-.button-primary:hover {
+/* .button-primary:hover {
     background-color: #46a049;
-}
+} */
 
 .button-secondary {
     background-color: #333;
@@ -92,9 +86,10 @@ input[type="radio"] {
 }
 
 .emphasis, #startQuestionsCount, #questionCount, #resultQuestionsCount {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin: 10px auto;
+    color: wheat;
 }
 
 .content {
@@ -108,7 +103,7 @@ input[type="radio"] {
     margin: 0 auto;
 }
 
-#quizDescription, #question, #result {
+#quizDescription,  #result {
     font-size: 18px;
     font-style: italic;
     color: #333;
@@ -117,16 +112,17 @@ input[type="radio"] {
 
 #progress {
     width: 100%;
-    background-color: #ddd;
+    background: linear-gradient(to right, #e1eec3, #f05053);
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 5px;
     position: relative;
 }
 
+
 #progressBar {
     height: 40px;
-    background-color: #4caf50;
+    background: linear-gradient(to right, #ee0979, #ff6a00);
     width: 0;  
     border-radius: 8px;
     position: relative;
@@ -213,13 +209,14 @@ input[type="radio"] {
   }
   
   input[type="radio"]:checked + label {
-    background-color: #4caf50;
+    /* background-color: #4caf50; */
     color: white;
     font-weight: bold;
+    border: 1px solid palegreen;
   }
   
   label:hover {
-    background-color: #b0f0a0;
+    background: linear-gradient(to right, #15995785, #159927);
   }
   
 
@@ -229,4 +226,6 @@ input[type="radio"] {
     padding: 0;
     padding-top: 40px;
 }
+
+
 
