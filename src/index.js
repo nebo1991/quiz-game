@@ -17,28 +17,25 @@ document.addEventListener("DOMContentLoaded", () => {
     new Question(
       "What was the name of the first computer virus?",
       ["MyDoom", "Slammer", "TheCreeper", "Zeus"],
-      "TheCreeper",
-      1
+      "TheCreeper"
     ),
     new Question(
       "In what decade was the internet created?",
       ["1940s", "1950s", "1960s", "1970s"],
-      "1960s",
-      1
+      "1960s"
     ),
     new Question(
       "Who is known as the father of computing?",
       ["Alan Turing", "Charles Babbage", "Steve Jobs", "Bill Gates"],
-      "Alan Turing",
-      2
+      "Alan Turing"
     ),
     new Question(
       "Which company created the first personal computer (PC)",
       ["IBM", "Apple", "Microsoft", "Xerox"],
-      "Apple",
-      3
+      "Apple"
     ),
   ];
+
   const quizDuration = 45;
 
   const quiz = new Quiz(questions, quizDuration, quizDuration);
