@@ -45,3 +45,12 @@ This file defines the Questions class, which manages questions shuffling.
 ```index.js```
 This is the main entry point of the application. It orchestrates the interactions between Quiz and Questions classes.
 
+
+
+```Styles``` folder contains all styling files for the application. Specifically, there is a single file: ```styles.css```. 
+This file holds all the CSS styling for the application.
+
+Root folder
+The root directory includes the main HTML structure for the application: ```index.html```.
+The main entry point of the application that contains the HTML structure.
+
