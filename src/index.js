@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resetQuizButton = document.querySelector("#restartButton");
   const resultContainer = document.querySelector("#result");
   const choicesContainer = document.querySelector("#choices");
+  const alertMessage = document.querySelector(".alert.error");
 
   quizView.style.display = "block";
   endView.style.display = "none";
@@ -36,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ),
   ];
 
-  const quizDuration = 45;
+  const quizDuration = 30;
 
   const quiz = new Quiz(questions, quizDuration, quizDuration);
   quiz.shuffleQuestions();
@@ -46,14 +47,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function startTheTimer() {
     timer = setInterval(() => {
       quiz.timeRemaining--;
-      if (quiz.timeRemaining == 40) {
-        // showToast("Hello time is up");
-        nextButton.innerText = "Hurry up!";
+      console.log("timeRemaining: ", quiz.timeRemaining);
+
+      if (quiz.timeRemaining == 15) {
+        alertMessage.style.visibility = "visible";
+        alertMessage.innerText = `⏰ Hurry up - 15sec left ⏰`;
       }
-      if (quiz.timeRemaining == 37) {
-        // showToast("Hello time is up");
-        nextButton.innerText = "Answer";
-      }
+
       if (quiz.timeRemaining < 0) {
         clearInterval(timer);
         showResults();
@@ -153,24 +153,3 @@ document.addEventListener("DOMContentLoaded", () => {
     restartQuiz();
   });
 });
-
-// function showToast(message) {
-//   const toastMessage = document.body.querySelector("#toast-message");
-
-//   console.log("showToast called!");
-
-//   toastMessage.innerHTML = message;
-
-//   const toastBlock = document.body.querySelector("#toast");
-//   toastBlock.classList.add("show");
-
-//   setTimeout(() => {
-//     toastBlock.classList.remove("show");
-//   }, 3000);
-
-//   const closeToastButton = document.body.querySelector("#close-toast");
-
-//   closeToastButton.addEventListener("click", () => {
-//     toastBlock.classList.remove("show");
-//   });
-// }

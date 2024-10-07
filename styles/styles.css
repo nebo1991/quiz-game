@@ -139,57 +139,6 @@ input[type="radio"] {
 }
 
 
-
-/* Timer */
-#timeRemaining {
-    font-size: 14px;
-    font-style: italic;
-    color: #333;
-    margin: -35px auto 12px;
-}
-
-/* Toast Notification */
-.toast {
-    visibility: hidden;
-    min-width: 200px;
-    background-color: #084fba;
-    color: #fff;
-    text-align: center;
-    border-radius: 2px;
-    padding: 16px;
-    position: fixed;
-    left: 50%;
-    bottom: 26px;
-    font-size: 17px;
-    transform: translateX(-50%);
-}
-
-.toast.show {
-    visibility: visible;
-    animation: fadein 0.5s, fadeout 0.9s 2.5s;
-}
-
-@keyframes fadein {
-    from { bottom: 0; opacity: 0; }
-    to { bottom: 26px; opacity: 1; }
-}
-
-@keyframes fadeout {
-    from { bottom: 26px; opacity: 1; }
-    to { bottom: 0; opacity: 0; }
-}
-
-#close-toast {
-    position: absolute;
-    top: 4px;
-    right: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-}
-
-
 input[type="radio"] {
     display: none;
   }
@@ -209,16 +158,12 @@ input[type="radio"] {
   }
   
   input[type="radio"]:checked + label {
-    /* background-color: #4caf50; */
     color: white;
     font-weight: bold;
     border: 1px solid palegreen;
   }
   
-  label:hover {
-    background: linear-gradient(to right, #15995785, #159927);
-  }
-  
+ 
 
 #choices {
     display: flex;
@@ -228,4 +173,58 @@ input[type="radio"] {
 }
 
 
+.alert {
+    position: relative;
+    top: 10;
+    left: 0;
+    width: 240px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    line-height: 1.8;
+    border-radius: 5px;
+    cursor: hand;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: 400;
+  }
 
+  .alertCheckbox {
+    display: none;
+    
+  }
+  
+  :checked + .alert {
+    display: none;
+    background: transparent;
+  }
+  
+  .alertText {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .alertClose {
+    float: right;
+    padding-top: 5px;
+    font-size: 10px;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .error {
+    visibility: hidden;
+    background: linear-gradient(to right, #556270, #ff6b6b);
+
+    border: 1px solid #FEEC6F;
+    color: #e6e3dc;
+  }
+
+
+.alertLabel {
+    padding-left: 150px;
+}
