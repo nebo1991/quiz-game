@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "Alan Turing"
     ),
     new Question(
-      "Which company created the first personal computer (PC)",
-      ["IBM", "Apple", "Microsoft", "Xerox"],
+      "Which among the following controls all parts of the computer and known as the brain of computer?",
+      ["RAM", "ROM", "CPU", "Processor"],
       "Apple"
     ),
   ];
