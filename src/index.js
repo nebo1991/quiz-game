@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     new Question(
       "Which among the following controls all parts of the computer and known as the brain of computer?",
       ["RAM", "ROM", "CPU", "Processor"],
-      "Apple"
+      "CPU"
     ),
   ];
 
