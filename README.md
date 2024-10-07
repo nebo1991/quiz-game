@@ -32,6 +32,7 @@ Your game must meet the following technical requirements:
 
 
 ## Project structure:
+
 The project follows a simple structure to organize the quiz-related logic. 
 
 Below is an overview of the main files within the ``src`` folder:
