@@ -42,7 +42,8 @@ This file contains the Quiz class which handles the core functionality of the qu
 ```questions.js```
 This file defines the Questions class, which manages questions shuffling.
 
-```index.js```
+```index.js```    git push --set-upstream origin nebo1991/fix--update-readme-part-2
+
 This is the main entry point of the application. It orchestrates the interactions between Quiz and Questions classes.
 
 
